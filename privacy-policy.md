@@ -1,7 +1,7 @@
 # Privacy Policy
 
 **App:** Pobyto  
-**Last updated:** 2026-09-01  
+**Last updated:** 2026-09-03  
 **Contact:** alina.altynbayeva.00@gmail.com
 
 ---
@@ -11,6 +11,20 @@
 Pobyto is a guidance app that helps you prepare for Czech residence permit applications and renewals. It does not submit applications or communicate with government authorities on your behalf.
 
 Pobyto can also generate a Czech draft for common administrative communication based on a short description you provide. Generated drafts should be checked before sending.
+
+---
+
+## Independent app and official sources
+
+Pobyto is an independent application and is not affiliated with, endorsed by, or representing the Czech government or any government authority.
+
+Information about Czech residence processes is based on official government sources, including:
+
+- Official Information Portal for Foreigners of the Ministry of the Interior of the Czech Republic: https://ipc.gov.cz/en/
+- Ministry of the Interior of the Czech Republic – Immigration: https://mv.gov.cz/mvcren/article/immigration.aspx
+- Ministry of Foreign Affairs of the Czech Republic – Entry & Residence: https://mzv.gov.cz/jnp/en/information_for_aliens/index.html
+
+Requirements can change, so important information should always be verified directly with the relevant official authority.
 
 ---
 
@@ -34,8 +48,10 @@ Please do not include passport numbers, national ID numbers, birth numbers or ot
 ### Services used by Pobyto
 
 - **Firebase (Google):** used for authentication, optional cloud sync and backend functions. Firebase may also process technical diagnostics needed to operate the service. See [Firebase Privacy and Security](https://firebase.google.com/support/privacy).
+
 - **Google Gemini API:** used only when you request a generated Czech draft. The text you enter is sent to Google for processing so the draft can be generated. Google's handling of this data is governed by the [Gemini API Terms](https://ai.google.dev/gemini-api/terms).
-- **RevenueCat:** used to manage Pro purchases and entitlements. RevenueCat does not receive your payment card details; payments are handled by Google Play. See [RevenueCat Privacy Policy](https://www.revenuecat.com/privacy).
+
+- **RevenueCat:** used to manage Pro purchases and entitlements. RevenueCat does not receive your payment card details; payments are handled by the relevant app store. See [RevenueCat Privacy Policy](https://www.revenuecat.com/privacy).
 
 ---
 
