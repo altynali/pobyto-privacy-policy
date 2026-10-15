@@ -1,106 +1,261 @@
 # Privacy Policy
 
 **App:** Pobyto  
-**Last updated:** 2026-09-03  
-**Contact:** alina.altynbayeva.00@gmail.com
+**Last updated:** October 15, 2026
+**Contact:** [alina.altynbayeva.00@gmail.com](mailto:alina.altynbayeva.00@gmail.com)
 
 ---
 
-## What Pobyto does
+## What Pobyto Does
 
-Pobyto is a guidance app that helps you prepare for Czech residence permit applications and renewals. It does not submit applications or communicate with government authorities on your behalf.
+Pobyto is an independent guidance and planning application that helps users prepare for Czech residence permit applications, renewals, and related immigration procedures.
 
-Pobyto can also generate a Czech draft for common administrative communication based on a short description you provide. Generated drafts should be checked before sending.
+The app helps users organize preparation steps, document checklists, deadlines, reminders, and practical Czech communication.
 
----
+Pobyto can also generate Czech-language drafts for common administrative communication based on a short description provided by the user. AI-generated content should always be reviewed and verified before use.
 
-## Independent app and official sources
-
-Pobyto is an independent application and is not affiliated with, endorsed by, or representing the Czech government or any government authority.
-
-Information about Czech residence processes is based on official government sources, including:
-
-- Official Information Portal for Foreigners of the Ministry of the Interior of the Czech Republic: https://ipc.gov.cz/en/
-- Ministry of the Interior of the Czech Republic – Immigration: https://mv.gov.cz/mvcren/article/immigration.aspx
-- Ministry of Foreign Affairs of the Czech Republic – Entry & Residence: https://mzv.gov.cz/jnp/en/information_for_aliens/index.html
-
-Requirements can change, so important information should always be verified directly with the relevant official authority.
+Pobyto does not submit applications, communicate with government authorities on users' behalf, determine legal eligibility, or provide legal advice.
 
 ---
 
-## Data we collect and why
+## Independent App and Official Sources
 
-### Data you enter yourself
+Pobyto is an independent application and is **not affiliated with, endorsed by, operated by, or representing the Czech government or any government authority**.
 
-When you use Pobyto you may enter:
+Information about Czech residence and immigration procedures is based on publicly available official government sources, including:
 
-- Your residence permit type and expiry date
-- Step statuses and personal notes on preparation steps
-- Document preparation notes
-- Text describing a situation when you use the draft-generation feature
+- **Official Information Portal for Foreigners – Ministry of the Interior of the Czech Republic:** [https://ipc.gov.cz/en/](https://ipc.gov.cz/en/)
+- **Ministry of the Interior of the Czech Republic – Immigration:** [https://mv.gov.cz/mvcren/article/immigration.aspx](https://mv.gov.cz/mvcren/article/immigration.aspx)
+- **Ministry of Foreign Affairs of the Czech Republic – Entry and Residence:** [https://mzv.gov.cz/jnp/en/information_for_aliens/index.html](https://mzv.gov.cz/jnp/en/information_for_aliens/index.html)
 
-Your plan, checklist and preparation data are stored on your device. If you choose to create an account, this data can also be synced to Firebase Firestore so you can access it across devices.
-
-When you use the draft-generation feature, the text you enter is sent to our Firebase backend and then to the Google Gemini API so that the requested Czech draft, translation and relevant phrases can be generated. Pobyto does not save the prompt or generated draft to your Pobyto account as part of this feature.
-
-Please do not include passport numbers, national ID numbers, birth numbers or other unnecessary sensitive personal information in the draft-generation field.
-
-### Services used by Pobyto
-
-- **Firebase (Google):** used for authentication, optional cloud sync and backend functions. Firebase may also process technical diagnostics needed to operate the service. See [Firebase Privacy and Security](https://firebase.google.com/support/privacy).
-
-- **Google Gemini API:** used only when you request a generated Czech draft. The text you enter is sent to Google for processing so the draft can be generated. Google's handling of this data is governed by the [Gemini API Terms](https://ai.google.dev/gemini-api/terms).
-
-- **RevenueCat:** used to manage Pro purchases and entitlements. RevenueCat does not receive your payment card details; payments are handled by the relevant app store. See [RevenueCat Privacy Policy](https://www.revenuecat.com/privacy).
+Immigration rules and requirements may change. Users should always verify important information directly with the relevant official authority before taking action.
 
 ---
 
-## Data we do not ask you to provide
+## Data We Collect and Why
 
-- Pobyto does not ask you to provide your passport number, national ID number, birth number or copies of identity documents.
-- Pobyto does not collect your precise or approximate location.
-- We do not share your data with advertisers or data brokers.
-- Pobyto does not train its own AI model on your data.
+### Information You Provide
+
+When using Pobyto, you may provide:
+
+- Your residence permit type and expiry date.
+- Preparation steps, completion statuses, and personal notes.
+- Document preparation statuses and related dates.
+- Reminder dates and preferences.
+- Text describing a situation when requesting an AI-generated Czech draft.
+
+Pobyto does not require users to provide passport numbers, national identification numbers, birth numbers, or copies of identity documents.
+
+### Anonymous Authentication and Accounts
+
+When you first use Pobyto, the application automatically creates a Firebase Anonymous Authentication account.
+
+This allows the application to associate your planning data with a Firebase user identifier without requiring you to provide an email address or create a traditional account.
+
+If you later register or sign in using email/password or Google Sign-In, the application can link the account to your existing Firebase identity.
+
+This allows supported planning data to be accessed across devices when you sign in using the same account.
+
+### Planning Data and Cloud Storage
+
+Planning and preparation information is stored locally on your device and may also be stored in Google Firebase Firestore under your Firebase user account, including an automatically created anonymous account.
+
+Cloud storage supports data persistence, synchronization, and recovery where available.
+
+Data associated with an anonymous account is not automatically accessible from another device unless the account is linked to a supported sign-in method.
+
+### AI-Assisted Draft Generation
+
+When you explicitly request an AI-generated Czech draft, the text you enter and any optional date provided are transmitted to Pobyto's Firebase backend and subsequently to the Google Gemini API.
+
+This information is processed to generate:
+
+- A Czech-language communication draft.
+- A translation of the draft.
+- Relevant Czech phrases.
+
+The entered text and generated draft are not saved as part of your Pobyto account or planning data.
+
+AI-generated content may contain errors and should be checked before sending or using it in official communication.
+
+**Please do not enter passport numbers, national ID numbers, birth numbers, residence card numbers, or other unnecessary sensitive personal information into the AI draft-generation field.**
 
 ---
 
-## Data storage and security
+## Third-Party Services
 
-Data that you choose to sync is stored using Google Firebase.
+Pobyto uses the following third-party services to provide its functionality.
 
-Data kept only on your device is not accessible to us.
+### Firebase (Google)
 
-Text entered into the draft-generation feature is transmitted securely to our backend and to Google Gemini for processing. It is not saved to your Pobyto account as part of the draft-generation feature.
+Firebase is used for:
 
-We use encrypted network connections when data is transmitted between the app and our backend services.
+- Anonymous authentication.
+- Email/password authentication and account management.
+- Cloud storage and synchronization through Firebase Firestore.
+- Backend functionality through Firebase Cloud Functions.
+- Technical processing required to operate the application.
+
+Firebase may process technical information necessary to provide these services.
+
+More information:
+[https://firebase.google.com/support/privacy](https://firebase.google.com/support/privacy)
+
+### Google Sign-In
+
+Google Sign-In is available as an optional authentication method.
+
+When selected, Google authentication services process information necessary to authenticate the user and associate the sign-in with their Pobyto account.
+
+### Google Gemini API
+
+Google Gemini API is used only when a user requests AI-assisted Czech draft generation.
+
+The text and optional date submitted for the requested generation are transmitted through Pobyto's Firebase backend to Google Gemini for processing.
+
+Pobyto does not use this information to train its own AI models.
+
+Google's processing and retention of submitted information are governed by its applicable terms and policies.
+
+More information:
+[https://ai.google.dev/gemini-api/terms](https://ai.google.dev/gemini-api/terms)
+
+### RevenueCat
+
+RevenueCat is used to manage Pobyto Pro purchases, subscription status, and premium feature entitlements.
+
+RevenueCat may process purchase-related identifiers, app user identifiers, transaction information, and entitlement status to provide these services.
+
+RevenueCat does not receive users' payment card details from Pobyto.
+
+Payments are processed by the relevant app store:
+
+- **iOS:** Apple App Store and Apple In-App Purchase.
+- **Android:** Google Play or the applicable Android app store.
+
+More information:
+[https://www.revenuecat.com/privacy](https://www.revenuecat.com/privacy)
 
 ---
 
-## Your choices and deletion
+## Data We Do Not Collect or Require
 
-You can:
+Pobyto:
 
-- Use the main planning features without creating an account.
-- Choose whether to use the draft-generation feature.
-- Delete your account and associated Pobyto cloud data from the Settings screen.
-- Contact us at the email above with a data question or deletion request.
+- Does not require users to upload passports, residence cards, or other identity-document files.
+- Does not collect precise or approximate device location.
+- Does not use advertising SDKs.
+- Does not sell personal data to advertisers or data brokers.
+- Does not train its own AI models using user-submitted information.
 
-Deleting your Pobyto account removes data stored by Pobyto for that account. Data processed by third-party services is also subject to their own retention and deletion rules.
-
----
-
-## Children
-
-Pobyto is not directed at children under 13 and does not knowingly collect data from them.
+Users should avoid entering unnecessary sensitive personal information in notes or AI-generation requests.
 
 ---
 
-## Changes to this policy
+## Data Storage and Security
 
-We may update this policy when Pobyto changes. The date at the top of this page shows when it was last updated.
+Pobyto uses local device storage and Google Firebase services to manage application data.
+
+Data associated with a Firebase user account, including an automatically created anonymous account, may be stored in Firebase Authentication and Firebase Firestore.
+
+Information stored only locally on a user's device is not directly accessible to Pobyto's developer.
+
+AI-generation requests are transmitted through Firebase Cloud Functions to Google Gemini using encrypted network connections.
+
+Pobyto uses encrypted network connections when transmitting data between the application and backend services.
+
+No system can guarantee absolute security. Users should avoid entering unnecessary sensitive information.
+
+---
+
+## Data Retention and Deletion
+
+### Data Retention
+
+Planning data associated with a Firebase user account is retained while the account and its associated data remain active, unless deleted through the application's account deletion functionality or otherwise removed according to applicable service policies.
+
+Locally stored application data may remain on a device until it is cleared through the application's available controls, account deletion, or removal of the application.
+
+Information processed by third-party services is subject to their respective retention and deletion policies.
+
+### Account Deletion
+
+Users can delete their Pobyto account from within the application:
+
+**Settings → Information → Delete account**
+
+Account deletion removes:
+
+- The associated Firebase Authentication account.
+- Pobyto cloud data associated with the account in Firebase Firestore.
+- Locally stored Pobyto account and planning data on the device, including related cached data and locally scheduled reminders.
+
+Account deletion may require recent authentication for security purposes.
+
+Deleting a Pobyto account does not automatically cancel an active subscription or issue a refund.
+
+Subscriptions must be managed through the app store where the purchase was made.
+
+### Subscription Management
+
+**On iPhone or iPad:**
+
+Open **Settings → Apple Account → Subscriptions → Pobyto** to manage or cancel an active subscription.
+
+**On Android:**
+
+Manage subscriptions through Google Play or the applicable Android app store used for the purchase.
+
+Deleting the application does not automatically cancel an active subscription.
+
+### Data and Deletion Requests
+
+For questions about personal data, privacy, or account deletion, contact:
+
+[alina.altynbayeva.00@gmail.com](mailto:alina.altynbayeva.00@gmail.com)
+
+---
+
+## Your Choices
+
+Users can:
+
+- Access the main planning features without registering with an email address.
+- Link an anonymous account to email/password or Google Sign-In.
+- Manage preparation information, statuses, and reminders.
+- Choose whether to use AI-assisted draft generation.
+- Restore eligible purchases through the application.
+- Delete their Pobyto account through Settings.
+- Contact the developer with privacy-related questions or deletion requests.
+
+---
+
+## Children's Privacy
+
+Pobyto is not directed at children under the age of 13.
+
+Pobyto does not knowingly collect personal information from children under 13.
+
+If you believe that information relating to a child under 13 has been provided to Pobyto, please contact the developer.
+
+---
+
+## Changes to This Privacy Policy
+
+This Privacy Policy may be updated to reflect changes in the application's functionality, services, legal requirements, or data-processing practices.
+
+The date at the top of this document indicates when the policy was last updated.
+
+The latest version will be made available through the application's published Privacy Policy link.
 
 ---
 
 ## Contact
 
-Questions about this policy: alina.altynbayeva.00@gmail.com
+For privacy questions, data requests, account deletion assistance, or other inquiries:
+
+**Email:** [alina.altynbayeva.00@gmail.com](mailto:alina.altynbayeva.00@gmail.com)
+
+**Application:** Pobyto
+
+**Developer:** Alina Altynbayeva — Independent Developer
